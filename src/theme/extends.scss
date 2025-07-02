@@ -1,0 +1,17 @@
+.display-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

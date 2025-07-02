@@ -1,0 +1,57 @@
+@import '/src/theme/index.scss';
+
+.containerDetails {
+  width: 20vw;
+  height: 95vh;
+  position: absolute;
+  bottom: 0;
+  padding: .5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to top, $bg-blue 0%, rgba($bg-primary, 0.5) 10%, rgba($bg-primary, 0.01) 100%);
+  border: 1px solid $bg-secondary;
+  mix-blend-mode: difference;
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+
+  .title {
+    text-align: center;
+    font-size: 16px;
+    font-family: $ff-primary;
+    margin: .5vw;
+  }
+
+  .bgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100vh;
+    text-align: center;
+    font-size: 5vh;
+    text-transform: uppercase;
+    background: linear-gradient(to left, #4B6A72 10%, rgba(#4B6A72, 0.2));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .targetDetails {
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-bottom: 2vw;
+    width: 90%;
+
+    .containerBtn div {
+      background-color: $bg-global;
+      &:nth-child(3) {
+        background-color: transparent;
+      }
+    }
+  }
+}

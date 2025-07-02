@@ -1,0 +1,28 @@
+@import '/src/theme/index.scss';
+
+.containerFilter {
+  position: absolute;
+  top: 6vh;
+  right: 4vw;
+  width: 25vw;
+  height: 100%;
+  z-index: 1;
+
+  .spentsDetails {
+    margin-top: 4vh;
+    padding: 1vw;
+    background-color: rgba($color: $bg-secondary, $alpha: 0.05);
+    max-height: 30vh;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 1px rgba($color: $white, $alpha: 0.25);
+    
+    p {
+      font-size: 14px;
+      text-align: right;
+      margin: 1vw 0;
+      span {
+        font-family: $ff-primary;
+      }
+    }
+  }
+}
