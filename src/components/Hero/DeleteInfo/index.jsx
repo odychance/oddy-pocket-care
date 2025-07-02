@@ -27,7 +27,7 @@ const DeleteInfo = ({ showDeleteFunc, deleteStatus, setNewAmountBase, setNewAmou
   return (
     <div className={clsx(s["containerPanel"], deleteStatus && s["displayPanel"])}>
       <div className={s["wrapperPanel"]}>
-        <p>Please write down <br/><span>"i want to delete all info".</span></p>
+        <p>Please write down <br/><span>&quot;i want to delete all info&quot;.</span></p>
         <input type='text' className={s["inputText"]}
           value={deleteInfoValue}
           onChange={(e) => {

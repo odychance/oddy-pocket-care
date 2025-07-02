@@ -4,7 +4,7 @@ import s from './styles.module.scss'
 import Image from 'next/image'
 import ArrowDown from '/src/assets/Images/svg/arrowDown.svg'
 
-const index = ({ text = "Filter" , className, options, setFilter }) => {
+const ButtonFilter = ({ text = "Filter" , className, options, setFilter }) => {
   const [ displayFilterOptions, setDisplayFilterOptions ] = React.useState(false)
 
   function showOptions() {
@@ -33,4 +33,4 @@ const index = ({ text = "Filter" , className, options, setFilter }) => {
   )
 }
 
-export default index
+export default ButtonFilter
